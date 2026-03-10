@@ -1,0 +1,101 @@
+/*<meta />*/
+
+@media print 
+{
+	/* Micro content skin styles */
+
+	.micro-content-truncated-mode .micro-response
+	{
+		overflow: hidden !important;
+	}
+
+	/* Hide Toolbar Topic proxy ans eLearning Toolbar proxy by default */
+
+	.buttons
+	{
+		display: none;
+	}
+
+	/* Menu styles */
+
+	ul.menu
+	{
+		display: none;
+	}
+
+	ul.menu.mc-component
+	{
+		display: none;
+		background-color: #ffffff;
+	}
+
+	ul.menu.mc-component a
+	{
+		
+	}
+
+	ul.menu.mc-component li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu.mc-component ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu.mc-component ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu.mc-component ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu.mc-component ul ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu.mc-component li > a.selected
+	{
+		background-color: transparent;
+	}
+
+	ul.menu.mc-component li > a:hover
+	{
+		background-color: #cacaca;
+	}
+
+	ul.menu.mc-component ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #cacaca;
+	}
+
+	ul.menu.mc-component ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #cacaca;
+	}
+
+	ul.menu.mc-component ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #cacaca;
+	}
+
+	ul.menu.mc-component ul ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #cacaca;
+	}
+
+	ul.menu.mc-component li > a.selected:hover
+	{
+		background-color: #cacaca;
+	}
+}
+
