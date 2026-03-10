@@ -876,6 +876,7 @@ samp
 }
 
 /* Code blocks */
+/* FIXED - color now set on pre directly */
 
 pre
 {
@@ -886,6 +887,10 @@ pre
 	overflow-x: auto;
 	font-size: 13.5px;
 	line-height: 1.6;
+	color: #e2e8f0;
+	/* ← THIS was missing */
+	white-space: pre-wrap;
+	word-break: break-word;
 }
 
 pre code
@@ -893,9 +898,10 @@ pre code
 	background: none;
 	border: none;
 	padding: 0;
-	color: #e2e8f0;
+	color: inherit;
+	/* ← inherits #e2e8f0 from pre */
 	font-size: 13.5px;
-	white-space: pre;
+	white-space: inherit;
 }
 
 /* =============================================
@@ -1358,5 +1364,32 @@ div#navigation a.selected,
 	font-weight: 500;
 	color: #ffffff;
 	letter-spacing: 0.01em;
+}
+
+/* Inline code - light background, dark red text */
+
+code
+{
+	font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+	font-size: 13px;
+	background: #f3f4f6;
+	/* #f3f4f6 - light */
+	border: 1px solid #e0e3e8;
+	border-radius: 3px;
+	padding: 1px 6px;
+	color: #c0392b;
+	/* dark red - visible on light bg */
+	white-space: nowrap;
+}
+
+/* Make sure pre overrides the inline code styles */
+
+pre code
+{
+	background: none !important;
+	border: none !important;
+	color: inherit !important;
+	padding: 0 !important;
+	white-space: inherit !important;
 }
 
